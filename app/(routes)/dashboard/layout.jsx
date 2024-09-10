@@ -21,7 +21,7 @@ function DashboardLayout({children}) {
     .from(budgets)
     .where(eq(budgets.createdBy,user?.primaryEmailAddress?.emailAddress))  
 
-    console.log(result);
+    // console.log(result);
     if(result?.length==0)
     {
       router.replace('./dashboard/budgets')
